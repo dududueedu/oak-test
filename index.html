@@ -11,7 +11,7 @@
 <body>
     <main>
         <div class="container">
-            CADASTRO E LISTAGEM DE PRODUTOS
+            <span>CADASTRO E LISTAGEM DE PRODUTOS</span>
             <div class="formItens">
                 <div class="divName">
                     <label for="name">Nome:</label>
@@ -28,14 +28,16 @@
                     <input type="number" id="amount">
                 </div>
 
-                <div class="divTipe">
-                    <label for="type">Disponível para Venda:</label>
-                    <select id="type">
-                        <option value="">Sim</option>
-                        <option value="">Não</option>
-                    </select>
+                <div class="divTypeMain">
+                    <div class="divTipe">
+                        <label for="type">Disponível para Venda:</label>
+                        <select id="type">
+                            <option value="">Sim</option>
+                            <option value="">Não</option>
+                        </select>
+                    </div>
+                    <button id="addItem" class="btnAdd">Cadastrar</button>
                 </div>
-                <button id="addItem">Cadastrar</button>
             </div>
 
             <div class="divTable">
@@ -49,7 +51,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                            
                     </tbody>
                 </table>
             </div>
