@@ -59,6 +59,10 @@ function insertProdt(i, index) {
 function loadProdts(){
     prodts = getProdtsBD();
 
+    prodts.sort(function(x, y){
+        return x.amount - y.amount;
+    })
+
     tbody.innerHTML = "";
 
     prodts.forEach((i, index) => {
