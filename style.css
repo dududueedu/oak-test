@@ -38,8 +38,8 @@ main {
 }
 
 .logo {
-    width: 86px;
-    height: 48px;
+    width: 100px;
+    height: 36px;
 }
 
 span {
@@ -107,7 +107,7 @@ i {
 }
 
 .columnAction {
-    width: 40px;
+    width: 5%;
     text-align: center;
 }
 
@@ -117,10 +117,15 @@ i {
 }
 
 .columnAmount {
-    width: 30%;
+    width: 25%;
+    text-align: center;
 }
 
 .columnType {
-    width: 80%;
+    width: 15%;
     text-align: center;
+}
+
+.btnDelete {
+    cursor: pointer;
 }
