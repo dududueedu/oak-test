@@ -11,7 +11,10 @@
 <body>
     <main>
         <div class="container">
-            <span>CADASTRO E LISTAGEM DE PRODUTOS</span>
+            <div class="header">
+                <img src="./img/logo.png" alt="logo" class="logo">
+                <span>CADASTRO E LISTAGEM DE PRODUTOS</span>
+            </div>
             <div class="formItens">
                 <div class="divName">
                     <label for="name">Nome:</label>
@@ -28,15 +31,12 @@
                     <input type="number" id="amount">
                 </div>
 
-                <div class="divTypeMain">
-                    <div class="divTipe">
-                        <label for="type">Disponível para Venda:</label>
-                        <select id="type">
-                            <option value="">Sim</option>
-                            <option value="">Não</option>
-                        </select>
-                    </div>
-                    <button id="addItem" class="btnAdd">Cadastrar</button>
+                <div class="divType">
+                    <label for="type">Disponível para Venda:</label>
+                    <select id="type">
+                        <option value="">Sim</option>
+                        <option value="">Não</option>
+                    </select>
                 </div>
             </div>
 
@@ -54,6 +54,7 @@
                     </tbody>
                 </table>
             </div>
+            <button id="addItem" class="btnAdd">Cadastrar</button>
         </div>
     </main>
     

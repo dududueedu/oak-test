@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    color: white;
+    color: #002828;
 }
 
 main {
@@ -24,31 +24,103 @@ main {
 .container {
     display: flex;
     margin-top: 40px;
-    background-color: #002828;
-    padding: 10px 0;
+    background-color: #f8f8f8;
+    padding: 30px 0px 10px 0px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 86px;
+    height: 48px;
+}
+
 span {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .container .formItens {
     margin: 40px 0px;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-    padding: 30px;
-    flex-wrap: wrap;
+    gap: 10px 90px;
+    width: 90%;
+    flex-wrap: wrap;    
 }
 
-.divTypeMain {
+.divName, .divDesc, .divAmount {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.btnAdd {
-    margin-left: 200px;
+.divType {
+    margin-top: 20px;
+}
+
+.container .btnAdd {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+input, select {
+    padding: 5px;
+}
+
+.divTable {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+table {
+    width: 90%;
+    padding: 0px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+table th{
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 5px;
+}
+
+i {
+    font-size: 25px;
+}
+
+.bxs-chevron-up-circle {
+    color: #008010;
+}
+
+.bxs-chevron-down-circle {
+    color: #ff0101;
+}
+
+.columnAction {
+    width: 40px;
+    text-align: center;
+}
+
+.columnAction>button {
+    background: transparent;
+    border: none;
+}
+
+.columnAmount {
+    width: 30%;
+}
+
+.columnType {
+    width: 80%;
+    text-align: center;
 }
